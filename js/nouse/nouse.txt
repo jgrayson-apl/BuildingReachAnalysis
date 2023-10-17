@@ -1,0 +1,67 @@
+const featureReduction = {
+        type: "binning",
+        fields:[
+          {
+            name: "avg_visibility",
+            outStatistic: {
+              onStatisticField: "visible",
+              statisticType: "avg"
+            }
+          }
+        ],
+        fixedBinLevel: 16,
+        labelsVisible: true,
+        labelingInfo: [
+          {
+            // minScale: 144448,
+            // maxScale: 0,
+            deconflictionStrategy: "none",
+            symbol: {
+              type: "text",
+              color: "white",
+              font: {
+                family: "Avenir Next LT Pro",
+                size: 10,
+                weight: "bold"
+              },
+              haloColor: colors[4],
+              haloSize: 0.5
+            },
+            labelExpressionInfo: {
+              expression: "Text($feature.avg_visibility, '#,###')"
+            }
+          }
+        ],
+        popupEnabled: true,
+        popupTemplate: {
+          title: "Avg Visibility",
+          content: "{avg_visibility}"
+        },
+        renderer: {
+          type: "simple",
+          symbol: {
+            type: "simple-fill",
+            color: [0, 255, 71, 1],
+            outline: {
+              color: "rgba(153, 31, 23, 0.3)",
+              width: 0.3
+            }
+          },
+          visualVariables: [
+            {
+              type: "color",
+              field: "visible",
+              legendOptions: {
+                title: "avg_visibility"
+              },
+              stops: [
+                {value: 0, color: colors[0]},
+                {value: 25, color: colors[1]},
+                {value: 75, color: colors[2]},
+                {value: 200, color: colors[3]},
+                {value: 300, color: colors[4]}
+              ]
+            }
+          ]
+        }
+      };

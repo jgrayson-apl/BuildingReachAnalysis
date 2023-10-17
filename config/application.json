@@ -1,0 +1,14 @@
+{
+  "title": "Building Reach Analysis",
+  "description": "",
+  "portalUrl": "https://www.arcgis.com",
+  "oauthappid": null,
+  "authMode": "anonymous",
+  "apiKey": null,
+  "group": "",
+  "webmap": "",
+  "webscene": "de3d358610bf4d118bb242dceafcd264",
+  "container": "view-container",
+  "shareable": [],
+  "buildingsLayerTitle": "OSM Footprints"
+}
