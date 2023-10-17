@@ -18,13 +18,13 @@ This demo is built as a _static_ web application.
 
 Update these demo-specific relevant parameters in ./config/application.json file in your favorite json editor:
 
-|               parameter | details                                                           |
-|------------------------:|-------------------------------------------------------------------|
-|           **portalUrl** | Organization or Enterprise URL; example: https://www.arcgis.com   |
-|          **oauthappid** | The OAuth ID of the Web Application item                          |
-|            **authMode** | For public access set to 'anonymous' (and set oauthappid to null) |
-|            **webscene** | The item id of the web scene                                      |
-| **buildingsLayerTitle** | Name of the buildings layer in the Web Scene                      |
+|               parameter | details                                                               |
+|------------------------:|-----------------------------------------------------------------------|
+|           **portalUrl** | Organization or Enterprise URL; example: https://www.arcgis.com       |
+|          **oauthappid** | The OAuth ID of the Web Application item                              |
+|            **authMode** | For public access set to 'anonymous' (and set oauthappid to null)     |
+|            **webscene** | The item id of the web scene                                          |
+| **buildingsLayerTitle** | Name of the buildings layer in the Web Scene (Scene or Feature Layer) |
 
 #### For questions about the demo web application:
 
