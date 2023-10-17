@@ -26,6 +26,7 @@ Update these demo-specific relevant parameters in ./config/application.json file
 |            **webscene** | The item id of the web scene                                          |
 | **buildingsLayerTitle** | Name of the buildings layer in the Web Scene (Scene or Feature Layer) |
 
+
 #### For questions about the demo web application:
 
 > John Grayson | Prototype Specialist | Geo Experience Center\
